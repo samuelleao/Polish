@@ -1,0 +1,59 @@
+.bt{
+    background-color: transparent;
+    border: 1px solid var(--color-grey-6);
+    border-radius: 4px;
+    height: 38px;
+    padding: 0 16px;
+    color: var(--color-grey-1);
+    font-size: var(--font-3);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family-1);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+.bt:hover{
+    background-color: var(--color-grey-6);
+    color: var(--color-grey-1);
+}
+
+.bt:focus{
+    background-color: var(--color-grey-1);
+    color: var(--color-white);
+}
+
+.bt.like{
+    height: 28px;
+    color: var(--color-grey-3);
+    background-color: var(--color-white);
+    border-color: var(--color-white);
+    padding: 0 8px;
+}
+
+.bt.like:hover{
+    color: var(--color-like);
+}
+
+.bt.like:focus{
+    background-color: var(--color-like);
+    border-color: var(--color-like);
+    color: var(--color-white);
+}
+
+.bt.close{
+    padding: 0 14px;
+    font-family: var(--font-family-2);
+    color: var(--color-grey-2);
+    background-color: var(--color-grey-6);
+    border-color: var(--color-grey-6);
+}
+
+.bt.close:hover{
+    background-color: var(--color-grey-5);
+}
+
+
