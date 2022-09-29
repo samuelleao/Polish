@@ -4,6 +4,7 @@ import {
   productsCart,
   productsCategory,
 } from "../../utils/produtcsData";
+import { ProductModalDetails } from "../ProductModalDetails";
 
 export const Product = ({ title, description, img, price, category, id }) => {
   window.onload = () => {
@@ -17,7 +18,7 @@ export const Product = ({ title, description, img, price, category, id }) => {
             ),
             productImageUrl: buttonOpenModal.getAttribute("data-product-img"),
           };
-          document.body.insertAdjacentHTML("beforeend", Modal(details));
+          document.body.insertAdjacentHTML("beforeend", ProductModalDetails(details));
         });
       }
     );
