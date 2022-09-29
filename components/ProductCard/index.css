@@ -1,0 +1,146 @@
+.product-card {
+  min-width: 278px;
+  max-width: 278px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  scroll-snap-align: center;
+}
+
+.product-card-header {
+  height: 164px;
+  position: relative;
+}
+
+.product-card-header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-card-header .like {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.product-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.product-card-footer {
+  display: flex;
+  gap: 16px;
+}
+
+.product-card-footer .bt:nth-child(0) {
+  flex: 1;
+}
+
+.product-card-footer .bt:nth-child(1) {
+  flex: 2;
+}
+
+.products-section {
+  padding-top: 100px;
+}
+
+.products-section:last-child {
+  padding-bottom: 100px;
+}
+
+.products-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products-area {
+  margin-top: 48px;
+  display: flex;
+  overflow-x: auto;
+  gap: 40px;
+  margin-inline: -1000px;
+  padding: 40px 0;
+  scroll-snap-type: x mandatory;
+}
+
+.products-area .product-card:nth-child(1) {
+  margin-left: 1000px;
+}
+
+.products-area .product-card:last-child {
+  margin-right: 1000px;
+}
+
+.products-section-header-buttons-control-scroll {
+  display: flex;
+  gap: 16px;
+}
+
+.products-area::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+}
+
+.cart-product {
+  display: flex;
+  gap: 12px;
+}
+
+.cart-product img {
+  width: 100px;
+  height: 92px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.cart-product-title {
+  flex: 4;
+}
+
+.cart-product-price {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .products-section {
+    padding: 40px 0;
+  }
+
+  .products-section:last-child {
+    padding-bottom: 100px;
+  }
+
+  .products-area {
+    margin-inline: -16px;
+  }
+
+  .product-card {
+    scroll-snap-align: end;
+  }
+
+  .product-card:last-child {
+    scroll-snap-align: start;
+  }
+
+  .products-area .product-card:nth-child(1) {
+    margin-left: 1rem;
+  }
+
+  .products-area .product-card:last-child {
+    margin-right: 3rem;
+  }
+
+  .products-section-header {
+    padding-right: 1.5rem;
+  }
+}
