@@ -1,6 +1,12 @@
 import "./index.css";
+import { Cart } from "../Cart";
 
 export const Navbar = () => {
+  setTimeout(() => {
+    document.querySelector(".bt-cart").addEventListener("click", () => {
+        document.body.insertAdjacentHTML("beforeend", Cart())
+    });
+  }, 0);
   return `
     <nav class="navbar">
         <div class="container">

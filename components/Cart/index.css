@@ -1,0 +1,9 @@
+.modal-products-cart-area {
+  padding:  0 24px 24px 24px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
