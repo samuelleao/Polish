@@ -1,6 +1,8 @@
 import "./index.css";
+import { ProductCart } from "../ProductCart";
+import { productsCart as data } from '../../utils/produtcsData'
 
-export const Cart = () => {
+export const Cart = (productsCart = data) => {
   setTimeout(() => {
     document
       .querySelector("#button-close-modal")
@@ -19,7 +21,13 @@ export const Cart = () => {
             <div class="modal-body">
                 <p class="font-3-regular color-grey-2 mb-4">Aqui nessa seção você pode acessar todos os produtos que selecionou para comprar</p>
             </div>
-            <div class="modal-products-cart-area"></div>
+            <div class="modal-products-cart-area">
+            ${
+                productsCart.map((element)=>(
+                    ProductCart(element)
+                )).join('')
+            }
+        </div>
         </div>
     </div>
     `;

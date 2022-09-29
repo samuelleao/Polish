@@ -1,10 +1,42 @@
 import "./index.css";
 import {
+  products,
+  productsCart,
   productsCategory,
 } from "../../utils/produtcsData";
 
 export const Product = ({ title, description, img, price, category, id }) => {
+  window.onload = () => {
+    Array.from(document.querySelectorAll(".button-more-detail")).map(
+      (buttonOpenModal) => {
+        buttonOpenModal.addEventListener("click", () => {
+          const details = {
+            produtoTitle: buttonOpenModal.getAttribute("data-product-title"),
+            productDescription: buttonOpenModal.getAttribute(
+              "data-product-description"
+            ),
+            productImageUrl: buttonOpenModal.getAttribute("data-product-img"),
+          };
+          document.body.insertAdjacentHTML("beforeend", Modal(details));
+        });
+      }
+    );
 
+    Array.from(document.querySelectorAll("[data-product-button-add]")).forEach(
+      (element) => {
+        element.addEventListener("click", () => {
+          const newProductInCart = products.find((product) => {
+            return (
+              product.id ==
+              Number(element.getAttribute("data-product-button-add"))
+            );
+          });
+          productsCart.push(newProductInCart)
+          document.querySelector(".cart-number").textContent = productsCart.length
+        });
+      }
+    );
+  };
   return `
     <div class="product-card">
       <div class="product-card-header">

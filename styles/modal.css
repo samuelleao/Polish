@@ -13,7 +13,6 @@
 
 .modal {
   width: 552px;
-  padding: 36px 24px;
   background-color: var(--color-white);
   position: relative;
   border-radius: 8px;
@@ -27,6 +26,7 @@
 .modal-header {
   display: flex;
   justify-content: space-between;
+  padding: 2rem 24px 0 24px;
 }
 
 .modal-body {
@@ -34,6 +34,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding: 1rem 24px;
 }
 
 .modal-wrapper.show-modal {
