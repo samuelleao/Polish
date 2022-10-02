@@ -1,9 +1,9 @@
 .bt{
     background-color: transparent;
-    border: 1px solid var(--color-grey-6);
-    border-radius: 4px;
-    height: 38px;
-    padding: 0 16px;
+    border: 0.063rem solid var(--color-grey-6);
+    border-radius: 0.25rem;
+    height: 2.375rem;
+    padding: 0 1rem;
     color: var(--color-grey-1);
     font-size: var(--font-3);
     text-decoration: none;
@@ -27,11 +27,11 @@
 }
 
 .bt.like{
-    height: 28px;
+    height: 1.75rem;
     color: var(--color-grey-3);
     background-color: var(--color-white);
     border-color: var(--color-white);
-    padding: 0 8px;
+    padding: 0 0.5rem;
 }
 
 .bt.like:hover{
@@ -45,7 +45,7 @@
 }
 
 .bt.close{
-    padding: 0 14px;
+    padding: 0 0.875rem;
     font-family: var(--font-family-2);
     color: var(--color-grey-2);
     background-color: var(--color-grey-6);

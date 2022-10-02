@@ -8,14 +8,14 @@
   justify-content: center;
   align-items: center;
   z-index: 3;
-  padding-inline: 16px;
+  padding-inline: 1rem;
 }
 
 .modal {
   width: 552px;
   background-color: var(--color-white);
   position: relative;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   overflow: hidden;
   transition: transform 0.3s ease;
   opacity: 1;
@@ -26,15 +26,15 @@
 .modal-header {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 24px 0 24px;
+  padding: 2rem 1.5rem 0 1.5rem;
 }
 
 .modal-body {
   padding-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 1rem 24px;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
 }
 
 .modal-wrapper.show-modal {

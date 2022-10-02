@@ -17,10 +17,10 @@
     --color-white:  #FFFFFF;
     --color-like:   #DF2A55;
 
-    --font-1: 28px;
-    --font-2: 20px;
-    --font-3: 16px;
-    --font-4: 14px;
+    --font-1: 1.75rem;
+    --font-2: 1.25rem;
+    --font-3: 1rem;
+    --font-4: 0.875rem;
 
     --font-family-1: "Inter", sans-serif;
     --font-family-2: "Nunito", sans-serif;
@@ -30,13 +30,17 @@
 
 .container{
     max-width: 100%;
-    width: 900px;
+    width: 56.25rem;
     margin: 0 auto;
+}
+
+#app{
+    overflow-x: hidden;
 }
 
 @media (max-width: 991px) {
     .container{
-        margin: 0 16px;
+        margin: 0 1rem;
     } 
 }
 

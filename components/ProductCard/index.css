@@ -1,14 +1,14 @@
 .product-card {
-  min-width: 278px;
-  max-width: 278px;
+  min-width: 17.375rem;
+  max-width: 17.375rem;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.25rem;
   scroll-snap-align: center;
 }
 
 .product-card-header {
-  height: 164px;
+  height: 10.25rem;
   position: relative;
 }
 
@@ -23,19 +23,19 @@
 
 .product-card-header .like {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 0.75rem;
+  right: 0.75rem;
 }
 
 .product-card-body {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .product-card-footer {
   display: flex;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .product-card-footer .bt:nth-child(0) {
@@ -47,11 +47,11 @@
 }
 
 .products-section {
-  padding-top: 100px;
+  padding-top: 6.25rem;
 }
 
 .products-section:last-child {
-  padding-bottom: 100px;
+  padding-bottom: 6.25rem;
 }
 
 .products-section-header {
@@ -61,43 +61,43 @@
 }
 
 .products-area {
-  margin-top: 48px;
+  margin-top: 3rem;
   display: flex;
   overflow-x: auto;
-  gap: 40px;
-  margin-inline: -1000px;
-  padding: 40px 0;
+  gap: 2.5rem;
+  margin-inline: -62.5rem;
+  padding: 2.5rem 0;
   scroll-snap-type: x mandatory;
 }
 
 .products-area .product-card:nth-child(1) {
-  margin-left: 1000px;
+  margin-left: 62.5rem;
 }
 
 .products-area .product-card:last-child {
-  margin-right: 1000px;
+  margin-right: 62.5rem;
 }
 
 .products-section-header-buttons-control-scroll {
   display: flex;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .products-area::-webkit-scrollbar {
   width: 0px;
-  height: 5px;
+  height: 0.313rem;
 }
 
 .cart-product {
   display: flex;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 .cart-product img {
-  width: 100px;
-  height: 92px;
+  width: 6.25rem;
+  height: 5.75rem;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 0.25rem;
 }
 
 .cart-product-title {
@@ -113,15 +113,15 @@
 
 @media (max-width: 900px) {
   .products-section {
-    padding: 40px 0;
+    padding: 2.5rem 0;
   }
 
   .products-section:last-child {
-    padding-bottom: 100px;
+    padding-bottom: 6.25rem;
   }
 
   .products-area {
-    margin-inline: -16px;
+    margin-inline: -1rem;
   }
 
   .product-card {
