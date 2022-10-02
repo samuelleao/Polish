@@ -1,10 +1,14 @@
 import "./index.css";
 import { Cart } from "../Cart";
+import { focusOnlyModal } from '../../utils/focusModal'
 
 export const Navbar = () => {
   setTimeout(() => {
-    document.querySelector(".bt-cart").addEventListener("click", () => {
-        document.body.insertAdjacentHTML("beforeend", Cart())
+    let bt = document.querySelector(".bt-cart")
+    bt.addEventListener("click", () => {
+      bt.setAttribute("aria-expanded", true)
+      document.body.insertAdjacentHTML("beforeend", Cart(bt));
+      focusOnlyModal(true)
     });
   }, 0);
   return `
@@ -23,7 +27,11 @@ export const Navbar = () => {
                     <a href="#decoracoes" class="bt">Decoração</a>
                 </li>
                 <li>
-                    <button href="" class="bt bt-cart" aria-label="Abrir carrinho">
+                    <button href="" class="bt bt-cart" 
+                    aria-label="Abrir carrinho" 
+                    aria-haspopup="dialog" 
+                    aria-expanded="false" 
+                    aria-controls="cart">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <span class="cart-number">0</span>
                     </button>
